@@ -17,6 +17,9 @@ namespace SimpleInjector826
             container.Options.DefaultScopedLifestyle = new WebRequestLifestyle();
             container.Options.PropertySelectionBehavior = new ImportPropertySelectionBehavior();
 
+            // Reverting to the pre-v5 behavior
+            container.Options.ResolveUnregisteredConcreteTypes = true;
+
             // Register your types, for instance:
             container.Register<MyDependency>();
 
