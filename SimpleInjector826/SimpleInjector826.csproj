@@ -145,6 +145,7 @@
     <Compile Include="ImportAttribute.cs" />
     <Compile Include="ImportPropertySelectionBehavior.cs" />
     <Compile Include="MyDependency.cs" />
+    <Compile Include="MyWebViewPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
