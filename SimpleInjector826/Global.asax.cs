@@ -15,6 +15,7 @@ namespace SimpleInjector826
             // Create the container as usual.
             var container = new Container();
             container.Options.DefaultScopedLifestyle = new WebRequestLifestyle();
+            container.Options.PropertySelectionBehavior = new ImportPropertySelectionBehavior();
 
             // Register your types, for instance:
             container.Register<MyDependency>();
